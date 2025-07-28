@@ -1,0 +1,29 @@
+The advent of transformer-based architectures such as BERT and GPT has revolutionized natural language processing, enabling models to grasp context with remarkable depth through attention mechanisms.
+
+Transfer learning in NLP allows pre-trained language models to adapt to downstream tasks such as question answering, sentiment analysis, and summarization, significantly reducing the data and time required for training.
+
+Explainable AI (XAI) focuses on interpreting black-box models, enabling stakeholders to understand and trust machine learning predictions, especially in high-stakes domains like finance and healthcare.
+
+Federated learning decentralizes model training by allowing edge devices to collaboratively learn shared models without exchanging raw data, preserving user privacy.
+
+Knowledge distillation is a technique used to compress large models into smaller, faster ones by transferring the knowledge from a high-capacity teacher model to a lightweight student model.
+
+Reinforcement learning has seen major breakthroughs in areas like robotics, game playing (AlphaGo), and autonomous navigation, leveraging rewards to learn optimal policies.
+
+Few-shot and zero-shot learning are paradigms where models generalize to unseen tasks with little or no task-specific training data, thanks to meta-learning and massive pretraining.
+
+Topic modeling using Latent Dirichlet Allocation assumes documents are mixtures of topics, and topics are distributions over words, helping uncover latent semantics in large corpora.
+
+The integration of computer vision and NLP has led to multi-modal models capable of tasks like image captioning, visual question answering, and text-to-image synthesis.
+
+Named Entity Recognition (NER) is vital in information extraction, identifying and classifying entities such as people, organizations, and locations in text streams.
+
+Semantic search goes beyond keyword matching by leveraging embeddings from models like Sentence-BERT to retrieve contextually relevant information.
+
+Ontology-based retrieval enhances traditional IR by utilizing domain-specific knowledge graphs to infer relationships between entities and improve result relevance.
+
+Document ranking models now incorporate user behavior signals, click-through rates, and session data to personalize and optimize search result relevance.
+
+Evaluation metrics such as precision@k, NDCG, and MAP are crucial for assessing IR system performance, especially in top-k result ranking scenarios.
+
+Emerging benchmarks like MTEB evaluate multilingual and cross-domain embedding models on a suite of IR and classification tasks, pushing model generalization forward.

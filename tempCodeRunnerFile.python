@@ -1,0 +1,104 @@
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+pen = turtle.Turtle()
+pen.pensize(3)
+pen.speed(10)
+
+# Helper function to draw a circle
+def draw_circle(color, radius, x, y):
+    pen.penup()
+    pen.goto(x, y)
+    pen.pendown()
+    pen.fillcolor(color)
+    pen.begin_fill()
+    pen.circle(radius)
+    pen.end_fill()
+
+# Draw face outline
+def draw_head():
+    pen.penup()
+    pen.goto(0, -200)
+    pen.pendown()
+    pen.color("blue")
+    pen.begin_fill()
+    pen.circle(200)
+    pen.end_fill()
+
+# Draw face (white part)
+def draw_face():
+    draw_circle("white", 150, 0, -170)
+
+# Draw eyes
+def draw_eyes():
+    for x in [-35, 35]:
+        draw_circle("white", 30, x, 20)
+        draw_circle("black", 10, x, 60)
+
+# Draw nose
+def draw_nose():
+    draw_circle("red", 15, 0, 35)
+
+# Draw mouth
+def draw_mouth():
+    pen.penup()
+    pen.goto(-50, -40)
+    pen.setheading(-60)
+    pen.pendown()
+    pen.color("black")
+    pen.circle(100, 120)
+
+# Draw whiskers
+def draw_whiskers():
+    pen.color("black")
+    whisker_y = [10, 0, -10]
+    for y in whisker_y:
+        for x_sign in [-1, 1]:
+            pen.penup()
+            pen.goto(x_sign * 20, y)
+            pen.setheading(0 if x_sign == 1 else 180)
+            pen.pendown()
+            pen.forward(60)
+
+# Draw collar
+def draw_collar():
+    draw_circle("red", 10, 0, -160)
+    pen.penup()
+    pen.goto(-70, -135)
+    pen.setheading(0)
+    pen.pendown()
+    pen.color("red")
+    pen.pensize(20)
+    pen.forward(140)
+    pen.pensize(3)
+
+# Draw bell
+def draw_bell():
+    draw_circle("yellow", 20, 0, -170)
+    pen.penup()
+    pen.goto(0, -190)
+    pen.setheading(90)
+    pen.pendown()
+    pen.color("black")
+    pen.circle(10, 180)
+    pen.penup()
+    pen.goto(-5, -190)
+    pen.pendown()
+    pen.forward(10)
+
+# Draw the full Doraemon
+def draw_doraemon():
+    draw_head()
+    draw_face()
+    draw_eyes()
+    draw_nose()
+    draw_mouth()
+    draw_whiskers()
+    draw_collar()
+    draw_bell()
+
+draw_doraemon()
+pen.hideturtle()
+turtle.done()
